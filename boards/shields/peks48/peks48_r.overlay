@@ -6,3 +6,11 @@
 };
 
 &xiao_serial { status = "disabled"; };
+
+/ {
+    aliases {
+        led_red = &led0;
+        led_blue = &led1;
+        led_green = &led2;
+    };
+};
