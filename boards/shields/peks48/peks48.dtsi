@@ -88,7 +88,7 @@
                 = <&xiao_d 0 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
                 , <&xiao_d 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
                 , <&xiao_d 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 
-                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 			
+                , <&xiao_d 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)> 		
                 ;
             col-gpios
                 = <&xiao_d 4 GPIO_ACTIVE_HIGH>
@@ -106,16 +106,4 @@
 
     };
 
-    name=boards/shields/peks48/peks48.dtsi url=https://github.com/Daffoge/zmk-PEKS48/blob/412c36b6b250a7423ac9ab3dadea683ac1ed3daa/boards/shields/peks48/peks48.dtsi
-/ {
-    aliases {
-        /* seeed_xiao_nrf52840 の既存 LED ノード (&led0) を参照 */
-        red_led   = &led0;
-        green_led = &led0;
-        blue_led  = &led0;
-
-        /* zmk のモジュールが rgbled0 を探す場合に備えて */
-        rgbled0 = &led0;
-    };
-};
 };
